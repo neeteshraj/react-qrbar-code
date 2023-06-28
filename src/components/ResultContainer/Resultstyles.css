@@ -1,0 +1,69 @@
+.Result-container {
+    min-width: 320px;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Result-header {
+    font-size: 16pt;
+    margin-bottom: 20px;
+}
+
+.Qrcode-result-table-container {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.Qrcode-result-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.Qrcode-result-table th,
+.Qrcode-result-table td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.Qrcode-result-table th {
+    text-align: left;
+}
+
+.Qrcode-result-table thead th {
+    background-color: #55608f;
+}
+
+.Qrcode-result-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.Qrcode-result-table tbody td {
+    position: relative;
+}
+
+.Qrcode-result-table tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+@media (max-width: 640px) {
+    .Qrcode-result-table-container {
+        overflow-x: scroll;
+    }
+
+    .Qrcode-result-table {
+        width: auto;
+    }
+}
